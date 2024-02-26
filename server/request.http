@@ -1,0 +1,67 @@
+GET http://localhost:5000/api/auth
+
+###
+
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "thanh",
+    "password": "thanh"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "thanh",
+    "password": "thanh"
+}
+
+###
+
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MWQ4M2Y4NjVmZTE0ZjQ0NTE1ODllYjgiLCJpYXQiOjE2NDkzMTg4NjF9.gEG9qUVHxSWTYwJZjIGsrtwqnWv-jNqrR8avW0vwVFg
+
+{
+    "number": 23,
+    "numberCount": 20,
+    "type": "soDe",
+    "country": "TPHCM"
+}
+
+###
+POST http://localhost:5000/api/lotes
+Content-Type: application/json
+
+{
+    "mb_prize_1_item_0": "68088",
+    "mb_prize_2_item_0": "47928",
+    "mb_prize_2_item_1": "76598",
+    "mb_prize_3_item_0": "02858",
+    "mb_prize_3_item_1": "39616",
+    "mb_prize_3_item_2": "11078",
+    "mb_prize_3_item_3": "17552",
+    "mb_prize_3_item_4": "78330",
+    "mb_prize_3_item_5": "57095",
+    "mb_prize_4_item_0": "2632",
+    "mb_prize_4_item_1": "7338",
+    "mb_prize_4_item_2": "7040",
+    "mb_prize_4_item_3": "5551",
+    "mb_prize_5_item_0": "3789",
+    "mb_prize_5_item_1": "4925",
+    "mb_prize_5_item_2": "1672",
+    "mb_prize_5_item_3": "7294",
+    "mb_prize_5_item_4": "7964",
+    "mb_prize_5_item_5": "5352",
+    "mb_prize_6_item_0": "619",
+    "mb_prize_6_item_1": "135",
+    "mb_prize_6_item_2": "070",
+    "mb_prize_7_item_0": "60",
+    "mb_prize_7_item_1": "66",
+    "mb_prize_7_item_2": "50",
+    "mb_prize_7_item_3": "11",
+}
